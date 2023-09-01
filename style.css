@@ -32,6 +32,10 @@ nav.navbar {
   padding-top: 7rem;
 }
 
+#jumbotron img {
+  width: 246px;
+}
+
 /* ABOUT */
 
 #about {
@@ -108,7 +112,6 @@ div.button a {
   border: none;
   padding: 6px 30px;
   border-radius: 14px;
-  background-color: rgb(72, 72, 245);
   color: black;
   font-size: 18px;
   font-weight: bold;
@@ -161,6 +164,10 @@ div.button a {
   display: inline-block;
 }
 
+#social ul li a i:hover {
+  transform: translateY(2px);
+}
+
 .fa-brands {
   text-decoration: none;
   font-size: 50px;
@@ -170,4 +177,119 @@ div.button a {
 /* FOOTER */
 footer {
   background-color: #333532;
+  padding-bottom: 3px;
+  padding-top: 7px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+/* MEDIA */
+@media screen and (max-width: 1400px) {
+  #jumbotron img {
+    width: 292px;
+  }
+
+  #project {
+    height: max-content;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #jumbotron {
+    padding-top: -5px;
+    background-color: #333532;
+    color: white;
+    grid-template-columns: none;
+    display: inherit;
+    display: flex;
+    flex-flow: column-reverse;
+    justify-items: center;
+    height: 100vh;
+  }
+
+  #jumbotron img {
+    transform: translateY(-50px);
+    width: 140px;
+    margin: auto;
+  }
+
+  #jumbotron .name-section {
+    transform: translateY(-50px);
+    font-size: 10px;
+    padding-top: 0;
+  }
+
+  #about {
+    height: max-content;
+    padding-bottom: 30px;
+  }
+
+  #about .container p {
+    font-size: 20px;
+  }
+
+  #about .about-me {
+    padding-bottom: 5px;
+  }
+
+  #project {
+    height: max-content;
+    padding-bottom: 30px;
+  }
+
+  #social {
+    padding-top: 25%;
+    height: 100vh;
+  }
+
+  #social .penutup h1 {
+    font-size: 2rem;
+  }
+
+  #social .penutup p {
+    font-size: 1rem;
+  }
+
+  footer {
+    height: max-content;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #jumbotron img {
+    transform: translateY(-32px);
+    width: 130px;
+    margin: auto;
+  }
+
+  #jumbotron .name-section h4 {
+    font-size: 40px;
+  }
+
+  #jumbotron .name-section p {
+    font-size: 20px;
+  }
+
+  #about {
+    height: 100vh;
+  }
+
+  #about .container p {
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #certification {
+    height: max-content;
+    padding-bottom: 30px;
+  }
+
+  #project {
+    height: max-content;
+    padding-bottom: 30px;
+  }
 }
