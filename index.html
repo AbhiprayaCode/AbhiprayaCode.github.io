@@ -17,13 +17,23 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
 
+    <!-- Font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&family=Tektur:wght@600&display=swap");
+    </style>
+
+    <script
+      src="https://kit.fontawesome.com/99610e2f89.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body id="home">
     <!-- Navbar -->
     <nav
-      class="navbar fixed-top navbar-expand-lg navbar-dark bg-success shadow-sm"
+      class="navbar fixed-top navbar-expand-lg navbar-dark shadow-sm"
     >
       <div class="container">
         <a class="navbar-brand" href="#">My Portfolio</a>
@@ -41,12 +51,15 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home"
+              <a class="nav-link" aria-current="page" href="#home"
                 >Home</a
               >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certification">Certificate</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#project">Project</a>
@@ -61,46 +74,39 @@
     <!-- Akhir Navbar -->
 
     <!-- Jumbotron -->
-    <section id="jumbotron" class="text-center">
+    <section id="jumbotron" class="">
+      <div class="name-section text-center">
+        <h4 class="display-4">Alif Elang Abhipraya</h4>
+        <p class="lead">Student | Front-End Web Developer</p>
+        <button type="button" class="btn btn-outline-warning">Hire Me</button>
+      </div>
       <img
-        src="img/IMG_4769.JPG"
-        alt=""
-        width="200"
-        class="rounded-circle img-thumbnail"
+        src="img/removed bg.png"
+        alt="My Photo"
+        width="246px"
       />
-      <h1 class="display-4">Alif Elang Abhipraya</h1>
-      <p class="lead">Student | Front-End Web Developer</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,224L40,240C80,256,160,288,240,256C320,224,400,128,480,122.7C560,117,640,203,720,224C800,245,880,203,960,192C1040,181,1120,203,1200,218.7C1280,235,1360,245,1400,250.7L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
     </section>
     <!-- Akhir Jumbotron -->
     <!-- About -->
     <section id="about">
       <div class="container">
         <div class="row text-center mb-3">
-          <div class="col">
+          <div class="about-me col">
             <h2>About Me</h2>
           </div>
         </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+        <div class="main-about row justify-content-center fs-5 text-center">
+          <div class="col-md-8">
             <p>
               Lulusan Sekolah Menengah Atas (SMA) Negeri 1 Karawang dengan
               kemampuan administrasi, memecahkan masalah, berkerja secara
               kelompok, menghitung pengeluaran dan pemasukan keuangan bisnis.
             </p>
-          </div>
-          <div class="col-md-4">
             <p>
               Sedang melaksanakan studi S-1 di
               <a
                 href="https://president.ac.id/"
-                class="link text-dark"
+                class="link"
                 target="_blank"
                 >President University</a
               >
@@ -108,18 +114,48 @@
               mengembangkan kemampuan dalam bidang teknologi informasi khususnya
               menjadi software engineer.
             </p>
+            <button type="button" class="btn btn-outline-warning">Hire Me</button>
+            <button type="button" class="btn btn-outline-warning">Download CV</button>
+
+        </div>
+      </div>
+    </section>
+    <!-- Akhir About -->
+    <!-- Certification start -->
+    <section id="certification">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center mb-3">
+            <h2>My Certifications</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <img src="img/Certifications/www.freecodecamp.org_certification_AbhiprayaCode_responsive-web-design2.png" class="card-img-top" alt="Responsive Web Design Certification" style="max-height:300px;">
+              <div class="card-body">
+                <h3 class="card-text text-center">Responsive Web Design Certification</h3>
+                <div class="button text-center" style="margin-top: 20px;">
+                  <a href="https://abhiprayacode.github.io/calculator-app/" class="btn" tabindex="-1" role="button" aria-disabled="true">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <img src="img/Certifications/RevoU.png" class="card-img-top" alt="Responsive Web Design Certification" style="max-height:300px;">
+              <div class="card-body">
+                <h3 class="card-text text-center">Software Engineering Introduction Certification</h3>
+                <div class="button text-center" style="margin-top: 20px;">
+                  <a href="https://drive.google.com/file/d/1DKgX-mxxVcyZgAfN9x4ihiUUDdeSiboU/view?usp=drive_link" class="btn" tabindex="-1" role="button" aria-disabled="true">View</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#c6ffdb"
-          fill-opacity="1"
-          d="M0,32L40,69.3C80,107,160,181,240,186.7C320,192,400,128,480,122.7C560,117,640,171,720,170.7C800,171,880,117,960,117.3C1040,117,1120,171,1200,181.3C1280,192,1360,160,1400,144L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
     </section>
-    <!-- Akhir About -->
+    <!-- Certification End -->
     <!-- Project -->
     <section id="project">
       <div class="container">
@@ -140,72 +176,39 @@
               <div class="card-body">
                 <h3 class="card-text">Calculator App</h3>
                 <p class="card-text">
-                  Sebuah website application yang menghitung keliling dan luas suatu bangun datar, dalam kasus ini segitiga
+                  A website application that calculate 
+                  circumference and area of triangle.
                 </p>
               </div>
               <div class="button text-end">
-                <a href="https://github.com/AbhiprayaCode/calculator-app"><button type="button">Code</button></a>
-                <a href="https://abhiprayacode.github.io/calculator-app/"><button type="button">View</button></a>
+                <a href="https://github.com/AbhiprayaCode/calculator-app" class="btn" tabindex="-1" role="button" aria-disabled="true">Code</a>
+                <a href="https://abhiprayacode.github.io/calculator-app/" class="btn" tabindex="-1" role="button" aria-disabled="true">View</a>
               </div>
             </div>
           </div>
           <div class="col-md-6 mb-3">
             <div class="card">
               <img
-                src="img/project/chris-ried-ieic5Tq8YMk-unsplash.jpg"
+                src="img/project/portfolio-website.png"
                 class="card-img-top"
                 alt="Project 2"
                 style="max-height:300px"
               />
               <div class="card-body">
+                <h3>Portfolio Website</h3>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  A portfolio website that inform who am i, what's project i've been finished, my certification and my social media. 
                 </p>
+              </div>
+              <div class="button text-end">
+                <a href="https://github.com/AbhiprayaCode/calculator-app" class="btn" tabindex="-1" role="button" aria-disabled="true">Code</a>
+                <a href="#home" class="btn" tabindex="-1" role="button" aria-disabled="true">View</a>
               </div>
             </div>
           </div>
         </div>
-        <!-- <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img
-                src="img/project/joshua-aragon-EaB4Ml7C7fE-unsplash.jpg"
-                class="card-img-top"
-                alt="Project 4"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div> -->
-          <!-- <div class="col-md-4 mb-3">
-            <div class="card">
-              <img
-                src="img/project/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg"
-                class="card-img-top"
-                alt="Project 5"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,288L40,250.7C80,213,160,139,240,133.3C320,128,400,192,480,234.7C560,277,640,299,720,266.7C800,235,880,149,960,117.3C1040,85,1120,107,1200,138.7C1280,171,1360,213,1400,234.7L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
     </section>
     <!-- Akhir Project -->
     <!-- Contact -->
@@ -261,7 +264,7 @@
                   name="pesan"
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-success btn-kirim">
+              <button type="submit" class="btn btn-outline-warning btn-kirim">
                 Kirim
               </button>
 
@@ -281,24 +284,50 @@
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#198754"
-          fill-opacity="1"
-          d="M0,288L40,250.7C80,213,160,139,240,133.3C320,128,400,192,480,234.7C560,277,640,299,720,266.7C800,235,880,149,960,117.3C1040,85,1120,107,1200,138.7C1280,171,1360,213,1400,234.7L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
     </section>
     <!-- Akhir Contact -->
+    <!-- Social Media Start -->
+    <div id="social">
+      <div class="penutup">
+        <h1>Lets work together!</h1>
+        <p>Follow my social media for more</p>
+      </div>
+      <ul>
+        <li>
+          <a
+            href="https://instagram.com/alifelang_/"
+            id="profile-link"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/alif-elang-abhipraya-7a66ab252/"
+            id="profile-link"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/AbhiprayaCode"
+            id="profile-link"
+            target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <!-- Social Media End -->
     <!-- Footer -->
-    <footer class="bg-success text-white text-center pb-3">
+    <footer class="text-white text-center pb-1 pt-3">
       <p>
         Created with <i class="bi bi-suit-heart-fill text-danger"></i> by
         <a
           href="https://www.instagram.com/alifelang_/"
           class="text-white fw-semibold"
-          >alifabhipraya</a
-        >
+          >alifabhipraya</a>
       </p>
     </footer>
     <!-- Akhir Footer -->
