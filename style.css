@@ -48,8 +48,12 @@ nav.navbar {
   text-decoration: underline;
   color: #f2be22;
   padding-top: 50px;
-  padding-bottom: 18px;
+  padding-bottom: 12px;
   text-shadow: 1px 1px black;
+}
+
+#about .paragraph {
+  padding-bottom: 20px;
 }
 
 /* CERTIFICATION */
@@ -62,6 +66,7 @@ nav.navbar {
   text-decoration: underline;
   color: #f2be22;
   text-shadow: 1px 1px black;
+  padding-bottom: 20px;
 }
 
 #certification .card {
@@ -186,14 +191,12 @@ footer p {
 }
 
 /* MEDIA */
-@media screen and (max-width: 1400px) {
-  #jumbotron img {
-    width: 292px;
-  }
 
-  #project {
-    height: max-content;
-    padding-bottom: 30px;
+@media screen and (max-width: 1200px) {
+  #jumbotron img {
+    transform: translateY(-50px);
+    width: 229px;
+    margin: auto;
   }
 }
 
