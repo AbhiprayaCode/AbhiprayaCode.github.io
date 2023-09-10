@@ -20,20 +20,17 @@ nav.navbar {
 
 #jumbotron {
   height: 100vh;
-  padding-top: 6rem;
   background-color: #333532;
   color: white;
-  display: grid;
-  grid-template-columns: 70% 30%;
 }
 
 #jumbotron .name-section {
   font-size: 10px;
-  padding-top: 7rem;
+  padding-top: 16px;
 }
 
-#jumbotron img {
-  width: 246px;
+#jumbotron .name-section img {
+  margin-bottom: 16px;
 }
 
 /* ABOUT */
@@ -205,8 +202,6 @@ footer p {
     padding-top: -5px;
     background-color: #333532;
     color: white;
-    grid-template-columns: none;
-    display: inherit;
     display: flex;
     flex-flow: column-reverse;
     justify-items: center;
@@ -214,8 +209,7 @@ footer p {
   }
 
   #jumbotron img {
-    transform: translateY(-50px);
-    width: 140px;
+    width: 240px;
     margin: auto;
   }
 
@@ -226,16 +220,17 @@ footer p {
   }
 
   #about {
-    height: max-content;
-    padding-bottom: 30px;
-  }
-
-  #about .container p {
-    font-size: 20px;
+    padding-top: 0;
+    margin: auto;
+    height: 100vh;
   }
 
   #about .about-me {
     padding-bottom: 5px;
+  }
+
+  #about .container p {
+    font-size: 18px;
   }
 
   #project {
@@ -263,8 +258,7 @@ footer p {
 
 @media screen and (max-width: 800px) {
   #jumbotron img {
-    transform: translateY(-32px);
-    width: 130px;
+    width: 240px;
     margin: auto;
   }
 
@@ -278,10 +272,12 @@ footer p {
 
   #about {
     height: 100vh;
+    padding-top: 10px;
+    padding-bottom: 30px;
   }
 
   #about .container p {
-    font-size: 15px;
+    font-size: 18px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -294,5 +290,28 @@ footer p {
   #project {
     height: max-content;
     padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #about {
+    padding-bottom: 30px;
+  }
+
+  #certification,
+  #project,
+  #contact {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #certification .container .row .card,
+  #project .container .row .card {
+    margin-bottom: 20px;
+  }
+
+  #social {
+    height: 100vh;
+    padding-top: 50%;
   }
 }
