@@ -202,8 +202,6 @@ footer p {
     padding-top: -5px;
     background-color: #333532;
     color: white;
-    display: flex;
-    flex-flow: column-reverse;
     justify-items: center;
     height: 100vh;
   }
@@ -294,8 +292,12 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
+  #jumbotron {
+    padding-top: 60%;
+  }
+
   #about {
-    padding-bottom: 30px;
+    padding-top: 20%;
   }
 
   #certification,
@@ -305,6 +307,10 @@ footer p {
     padding-right: 30px;
   }
 
+  #contact {
+    padding-top: 50%;
+  }
+
   #certification .container .row .card,
   #project .container .row .card {
     margin-bottom: 20px;
@@ -312,6 +318,6 @@ footer p {
 
   #social {
     height: 100vh;
-    padding-top: 50%;
+    padding-top: 80%;
   }
 }
