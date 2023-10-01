@@ -9,7 +9,7 @@ html {
 /* NAVBAR */
 
 nav.navbar {
-  background-color: #333532;
+  background-color: #2a2b29;
 }
 
 .navbar-nav.navbar-item a:active {
@@ -38,31 +38,63 @@ nav.navbar {
 #about {
   background-color: #4b4d49;
   color: white;
-  height: 100vh;
+  height: max-content;
+  padding-bottom: 100px;
 }
 
 #about .about-me {
   text-decoration: underline;
   color: #f2be22;
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 12px;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px rgb(37, 37, 37);
 }
 
 #about .paragraph {
+  padding-bottom: 10px;
+}
+
+/* TOOLS */
+section#tools {
+  background-color: #333532;
+  height: 100vh;
+}
+
+#tools h2 {
+  text-decoration: underline;
+  color: #f2be22;
+  text-shadow: 1px 1px rgb(37, 37, 37);
   padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#tools div.card-framework {
+  background-color: #d8d9d7;
+  max-width: 500px;
+  height: max-content;
+  margin: auto;
+}
+
+#tools div.card-framework svg {
+  max-width: 80px;
+  max-height: 80px;
+  margin: 10px;
+}
+
+#tools div.card-framework div.framework {
+  padding: 2rem;
 }
 
 /* CERTIFICATION */
 #certification {
   height: 100vh;
-  background-color: #333532;
+  background-color: #4b4d49;
 }
 
 #certification h2 {
   text-decoration: underline;
   color: #f2be22;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px rgb(37, 37, 37);
   padding-bottom: 20px;
 }
 
@@ -73,14 +105,14 @@ nav.navbar {
 /* PROJECT */
 
 #project {
-  background-color: #4b4d49;
+  background-color: #333532;
   height: 100vh;
 }
 
 #project h2 {
   text-decoration: underline;
   color: #f2be22;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px rgb(37, 37, 37);
 }
 
 #project .row .card {
@@ -121,16 +153,20 @@ div.button a {
   background-color: #e4af10;
 }
 
+div.button a:hover {
+  background-color: #f5da87;
+}
+
 /* CONTACT */
 #contact {
-  background-color: #333532;
+  background-color: #4b4d49;
   height: 100vh;
 }
 
 #contact h2 {
   text-decoration: underline;
   color: #f2be22;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px rgb(37, 37, 37);
 }
 
 #contact form label {
@@ -142,7 +178,7 @@ div.button a {
 #social {
   width: 100%;
   height: 100vh;
-  background-color: #4b4d49;
+  background-color: #333532;
   margin: auto;
   padding-top: 20%;
   text-align: center;
@@ -161,7 +197,8 @@ div.button a {
 }
 
 #social ul li {
-  margin: 30px;
+  margin-right: 30px;
+  margin-left: 20px;
   list-style: none;
   display: inline-block;
 }
@@ -178,7 +215,7 @@ div.button a {
 
 /* FOOTER */
 footer {
-  background-color: #333532;
+  background-color: #2a2b29;
   padding-bottom: 3px;
   padding-top: 7px;
 }
@@ -199,11 +236,11 @@ footer p {
 
 @media screen and (max-width: 1000px) {
   #jumbotron {
-    padding-top: -5px;
     background-color: #333532;
     color: white;
     justify-items: center;
     height: 100vh;
+    padding-top: 8rem;
   }
 
   #jumbotron img {
@@ -218,9 +255,8 @@ footer p {
   }
 
   #about {
-    padding-top: 0;
     margin: auto;
-    height: 100vh;
+    height: max-content;
   }
 
   #about .about-me {
@@ -234,6 +270,11 @@ footer p {
   #project {
     height: max-content;
     padding-bottom: 30px;
+  }
+
+  #contact {
+    height: max-content;
+    padding-bottom: 8rem;
   }
 
   #social {
@@ -269,13 +310,13 @@ footer p {
   }
 
   #about {
-    height: 100vh;
+    height: max-content;
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 5rem;
   }
 
   #about .container p {
-    font-size: 18px;
+    font-size: 14px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -298,17 +339,25 @@ footer p {
 
   #about {
     padding-top: 20%;
+    padding-bottom: 5rem;
   }
 
   #certification,
   #project,
-  #contact {
+  #contact,
+  #tools {
     padding-left: 30px;
     padding-right: 30px;
   }
 
+  #tools {
+    height: max-content;
+  }
+
   #contact {
-    padding-top: 50%;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    height: max-content;
   }
 
   #certification .container .row .card,
@@ -318,6 +367,12 @@ footer p {
 
   #social {
     height: 100vh;
-    padding-top: 80%;
+    padding-top: 11rem;
+    margin: auto;
+  }
+
+  #social ul {
+    margin-left: 0px;
+    margin-right: 20px;
   }
 }
